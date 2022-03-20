@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #d4af37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Vessel
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.Vessel .LeftHand_Side
+{
+    position: relative;
+    background-color:#0d0c0b;
+    border-radius: 20px;
+    padding: 40px;
+}
+.ProfileInfo
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ProfileInfo .Image_Box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ProfileInfo .Image_Box img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ProfileInfo h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.ProfileInfo h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.ContactInfo
+{
+    padding-top: 40px;
+}
+.Title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.ContactInfo ul
+{
+    position: relative;
+}
+.ContactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.ContactInfo ul li .Icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #d4af37;
+}
+.ContactInfo ul li span 
+{
+    color: #fff;
+    font-weight: 300;
+}
+.Education li
+{
+    margin-bottom: 15px;
+}
+.Education ul li 
+{
+    list-style: none;
+}
+
+.Education h5
+{
+    color: #d4af37;
+    font-weight: 500;
+}
+.Education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+.Education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.Languages .Percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: #6b5713;
+    display: block;
+    margin-top: 5px;
+}
+.Languages ul li span 
+{
+    color: #fff;
+    list-style: none;
+    font-weight: 300;
+}
+.Languages ul li
+{
+    list-style: none;
+    
+}
+.Languages .Percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: #d4af37;
+}
+.Vessel .RightHand_Side
+{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.About
+{
+    margin-bottom: 50px;
+}
+.About:last-child
+{
+    margin-bottom: 0;
+}
+.Title2
+{
+    color: #6b5713;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: rgb(73, 72, 14);
+}
+.About .Box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.About .Box .Year_Company
+{
+    min-width: 150px;
+}
+.About .Box .Year_Company h5
+{
+    text-transform: uppercase;
+    color: #909228;
+    font-weight: 600;
+}
+.About .Box .Text h4
+{
+    text-transform: uppercase;
+    color: #6b5713;
+    font-size: 16px;
+}
+.About_Skills .Box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.About_Skills .Box h4
+{
+    text-transform: uppercase;
+    color: #909228;
+    font-weight: 500;
+}
+.About_Skills .Box .Percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: #f0f0f0;   
+}
+.About_Skills .Box .Percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: #d4af37;
+}
+.About_Interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.About_Interest ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.About_Interest ul li .fa
+{
+    color: #d4af37;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width: 1000px)
+{
+    .Vessel
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .About_Interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px)
+{
+    .About .Box
+    {
+        flex-direction: column;
+    }
+    .About .Box .Year_Company
+    {
+        margin-bottom: 5px;
+    }
+    .About_Interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .About_Skills .Box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
